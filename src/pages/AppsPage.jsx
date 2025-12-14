@@ -1,8 +1,8 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { 
-  faMobile, 
-  faDesktop, 
-  faCloud, 
+import {
+  faMobile,
+  faDesktop,
+  faCloud,
   faRobot,
   faCalendar,
   faComments,
@@ -15,7 +15,7 @@ import {
 const AppsPage = () => {
   const apps = [
     {
-      name: 'Health Dashboard Mobile',
+      name: 'VentureMond Mobile App',
       description: 'Native mobile app for iOS and Android with offline capabilities',
       icon: faMobile,
       color: 'bg-blue-100 text-blue-600',
@@ -147,9 +147,9 @@ const AppsPage = () => {
                   </span>
                 </div>
               </div>
-              
+
               <p className="text-gray-600 text-sm mb-4">{app.description}</p>
-              
+
               <div className="flex items-center justify-between text-sm text-gray-500 mb-4">
                 <span>{app.downloads} downloads</span>
                 <div className="flex items-center">
@@ -157,7 +157,7 @@ const AppsPage = () => {
                   <span>{app.rating}</span>
                 </div>
               </div>
-              
+
               <div className="flex space-x-2">
                 <button className="flex-1 bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 text-sm flex items-center justify-center space-x-1">
                   <FontAwesomeIcon icon={faDownload} />
@@ -184,9 +184,9 @@ const AppsPage = () => {
                   {widget.size}
                 </span>
               </div>
-              
+
               <p className="text-gray-600 text-sm mb-3">{widget.description}</p>
-              
+
               <div className="flex items-center justify-between">
                 <span className="text-sm text-gray-500">{widget.type}</span>
                 <button className="bg-green-500 text-white py-1 px-3 rounded text-sm hover:bg-green-600">
@@ -213,7 +213,7 @@ const AppsPage = () => {
             <h3 className="font-semibold text-gray-900 text-sm">Epic EMR</h3>
             <p className="text-xs text-gray-500">Electronic Medical Records</p>
           </div>
-          
+
           <div className="bg-white rounded-lg p-4 text-center shadow-sm">
             <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mx-auto mb-3">
               <FontAwesomeIcon icon={faChartLine} className="text-green-600 text-xl" />
@@ -221,7 +221,7 @@ const AppsPage = () => {
             <h3 className="font-semibold text-gray-900 text-sm">Tableau</h3>
             <p className="text-xs text-gray-500">Data Visualization</p>
           </div>
-          
+
           <div className="bg-white rounded-lg p-4 text-center shadow-sm">
             <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mx-auto mb-3">
               <FontAwesomeIcon icon={faCloud} className="text-purple-600 text-xl" />
@@ -229,7 +229,7 @@ const AppsPage = () => {
             <h3 className="font-semibold text-gray-900 text-sm">AWS Health</h3>
             <p className="text-xs text-gray-500">Cloud Services</p>
           </div>
-          
+
           <div className="bg-white rounded-lg p-4 text-center shadow-sm">
             <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mx-auto mb-3">
               <FontAwesomeIcon icon={faComments} className="text-orange-600 text-xl" />

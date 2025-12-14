@@ -1,11 +1,11 @@
 import { useState } from "react";
-import logo from "../../assets/TestLogo.svg";
+import logo from "../../assets/venturemond_logo.png";
 import home from "../../assets/home.svg";
 import user from "../../assets/user.svg";
 import calender from "../../assets/calender.svg";
 import message from "../../assets/message.svg";
 import creditcard from "../../assets/creditcard.svg";
-import doc from "../../assets/doc.png";
+import doc from "../../assets/avatar_placeholder.svg";
 import settings from "../../assets/settings.svg";
 import more from "../../assets/more.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -22,12 +22,16 @@ const SmallScreenHeader = () => {
   return (
     <div className="flex items-center px-[3rem] xs:px-[1rem] bg-[#fff] rounded-[2rem] py-2">
       <div className="flex justify-between items-center w-full">
-        <div className="sm:basis-[20%] basis-[40%]">
-          <img src={logo} alt="logo" />
+        <div className="sm:basis-[20%] basis-[60%] flex items-center gap-2">
+          <img src={logo} alt="VentureMond Logo" className="h-8 w-auto" />
+          <span className="text-lg text-[#072635] flex items-center">
+            <span className="font-normal">Venture</span>
+            <span className="font-bold">Mond</span>
+          </span>
         </div>
 
         <div className="flex items-center">
-            
+
           <FontAwesomeIcon
             icon={isMenuOpen ? faClose : faBars}
             alt={isMenuOpen ? "Close Menu" : "Open Menu"}
@@ -82,8 +86,8 @@ const SmallScreenHeader = () => {
                 </div>
 
                 <div>
-                  <h3 className="font-bold">Nafis Rayan</h3>
-                  <p>Health Dashboard Developer</p>
+                  <h3 className="font-bold">VentureMond Client</h3>
+                  <p>Healthcare Admin</p>
                 </div>
               </div>
 

@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import logo from "../../assets/venturemond_logo.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faSearch,
@@ -12,7 +13,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { useApp } from '../../context/AppContext';
 
-const NewHeader = ({ isMobileMenuOpen = false, setIsMobileMenuOpen = () => {} }) => {
+const NewHeader = ({ isMobileMenuOpen = false, setIsMobileMenuOpen = () => { } }) => {
   const { searchQuery, setSearchQuery, notifications, removeNotification } = useApp();
   const [showNotifications, setShowNotifications] = useState(false);
 
@@ -36,10 +37,11 @@ const NewHeader = ({ isMobileMenuOpen = false, setIsMobileMenuOpen = () => {} })
 
           {/* Logo for mobile */}
           <div className="lg:hidden flex items-center space-x-2">
-            <div className="w-6 h-6 bg-red-500 rounded-lg flex items-center justify-center">
-              <FontAwesomeIcon icon={faHeartbeat} className="text-white text-sm" />
-            </div>
-            <span className="text-lg font-bold text-gray-800">Health Dashboard</span>
+            <img src={logo} alt="VentureMond Logo" className="h-8 w-auto" />
+            <span className="text-lg text-gray-800 flex items-center">
+              <span className="font-normal">Venture</span>
+              <span className="font-bold">Mond</span>
+            </span>
           </div>
 
           {/* Search Bar */}
@@ -123,8 +125,8 @@ const NewHeader = ({ isMobileMenuOpen = false, setIsMobileMenuOpen = () => {} })
           {/* User Profile */}
           <div className="flex items-center space-x-2 sm:space-x-3 pl-2 sm:pl-4 border-l border-gray-200">
             <div className="text-right hidden sm:block">
-              <p className="text-sm font-medium text-gray-900">Nafis Rayan</p>
-              <p className="text-xs text-gray-500">ADMIN</p>
+              <p className="text-sm font-medium text-gray-900">VentureMond Client</p>
+              <p className="text-xs text-gray-500">Healthcare Admin</p>
             </div>
             <div className="w-8 h-8 bg-gray-300 rounded-full flex items-center justify-center">
               <FontAwesomeIcon icon={faUser} className="text-gray-600 text-sm" />

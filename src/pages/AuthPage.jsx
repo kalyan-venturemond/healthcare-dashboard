@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { 
-  faUser, 
-  faLock, 
-  faEye, 
+import {
+  faUser,
+  faLock,
+  faEye,
   faEyeSlash,
   faShieldAlt,
   faKey,
@@ -50,7 +50,7 @@ const AuthPage = () => {
     <div className="space-y-4 sm:space-y-6">
       {/* Header */}
       <div>
-        <h1 className="text-xl sm:text-2xl font-bold text-gray-900">Authentication & Security</h1>
+        <h1 className="text-xl sm:text-2xl font-bold text-gray-900">VentureMond Secure Access</h1>
         <p className="text-gray-600 text-sm sm:text-base">Manage user authentication, roles, and security settings</p>
       </div>
 
@@ -61,11 +61,10 @@ const AuthPage = () => {
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
-              className={`py-2 px-1 border-b-2 font-medium text-sm capitalize ${
-                activeTab === tab
+              className={`py-2 px-1 border-b-2 font-medium text-sm capitalize ${activeTab === tab
                   ? 'border-blue-500 text-blue-600'
                   : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
-              }`}
+                }`}
             >
               {tab}
             </button>
@@ -81,8 +80,8 @@ const AuthPage = () => {
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <FontAwesomeIcon icon={faShieldAlt} className="text-blue-600 text-2xl" />
               </div>
-              <h2 className="text-2xl font-bold text-gray-900">Login Demo</h2>
-              <p className="text-gray-600">Secure access to your dashboard</p>
+              <h2 className="text-2xl font-bold text-gray-900">Client Login</h2>
+              <p className="text-gray-600">Secure access to your VentureMond workspace</p>
             </div>
 
             <form className="space-y-4">
@@ -147,7 +146,7 @@ const AuthPage = () => {
               </button>
             </div>
           </div>
-          
+
           <div className="overflow-x-auto">
             <table className="w-full">
               <thead className="bg-gray-50">
@@ -167,8 +166,8 @@ const AuthPage = () => {
                         <FontAwesomeIcon icon={faUser} className="text-blue-600" />
                       </div>
                       <div className="ml-4">
-                        <div className="text-sm font-medium text-gray-900">Dr. John Smith</div>
-                        <div className="text-sm text-gray-500">john.smith@hospital.com</div>
+                        <div className="text-sm font-medium text-gray-900">Client One</div>
+                        <div className="text-sm text-gray-500">client1@venturemond.com</div>
                       </div>
                     </div>
                   </td>
@@ -191,8 +190,8 @@ const AuthPage = () => {
                         <FontAwesomeIcon icon={faUser} className="text-green-600" />
                       </div>
                       <div className="ml-4">
-                        <div className="text-sm font-medium text-gray-900">Sarah Johnson</div>
-                        <div className="text-sm text-gray-500">sarah.johnson@hospital.com</div>
+                        <div className="text-sm font-medium text-gray-900">Client Two</div>
+                        <div className="text-sm text-gray-500">client2@venturemond.com</div>
                       </div>
                     </div>
                   </td>
@@ -228,7 +227,7 @@ const AuthPage = () => {
                   <p className="text-gray-600 text-sm">{role.description}</p>
                 </div>
               </div>
-              
+
               <div>
                 <h4 className="text-sm font-medium text-gray-900 mb-2">Permissions:</h4>
                 <div className="space-y-1">
@@ -240,7 +239,7 @@ const AuthPage = () => {
                   ))}
                 </div>
               </div>
-              
+
               <div className="mt-4 pt-4 border-t border-gray-200">
                 <button className="text-blue-600 hover:text-blue-900 text-sm font-medium">
                   Edit Permissions
@@ -264,7 +263,7 @@ const AuthPage = () => {
                 </div>
                 <button className="bg-green-500 text-white px-3 py-1 rounded text-sm">Enabled</button>
               </div>
-              
+
               <div className="flex items-center justify-between">
                 <div>
                   <h4 className="text-sm font-medium text-gray-900">Session Timeout</h4>
@@ -276,7 +275,7 @@ const AuthPage = () => {
                   <option>2 hours</option>
                 </select>
               </div>
-              
+
               <div className="flex items-center justify-between">
                 <div>
                   <h4 className="text-sm font-medium text-gray-900">Password Policy</h4>
@@ -294,18 +293,18 @@ const AuthPage = () => {
                 <FontAwesomeIcon icon={faShieldAlt} className="text-green-600" />
                 <div>
                   <p className="text-sm font-medium text-gray-900">Successful login</p>
-                  <p className="text-xs text-gray-500">Dr. Smith - 2 hours ago</p>
+                  <p className="text-xs text-gray-500">Client One - 2 hours ago</p>
                 </div>
               </div>
-              
+
               <div className="flex items-center space-x-3 p-3 bg-yellow-50 rounded-lg">
                 <FontAwesomeIcon icon={faKey} className="text-yellow-600" />
                 <div>
                   <p className="text-sm font-medium text-gray-900">Password changed</p>
-                  <p className="text-xs text-gray-500">Sarah Johnson - 1 day ago</p>
+                  <p className="text-xs text-gray-500">Client Two - 1 day ago</p>
                 </div>
               </div>
-              
+
               <div className="flex items-center space-x-3 p-3 bg-red-50 rounded-lg">
                 <FontAwesomeIcon icon={faShieldAlt} className="text-red-600" />
                 <div>

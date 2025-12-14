@@ -1,3 +1,4 @@
+import logo from "../../assets/venturemond_logo.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faHome,
@@ -32,11 +33,12 @@ const NewSidebar = () => {
     <div className="w-64 bg-white shadow-lg h-screen flex flex-col">
       {/* Logo */}
       <div className="p-4 lg:p-6 border-b border-gray-100">
-        <div className="flex items-center space-x-3">
-          <div className="w-8 h-8 bg-red-500 rounded-lg flex items-center justify-center">
-            <FontAwesomeIcon icon={faHeartbeat} className="text-white text-lg" />
-          </div>
-          <span className="text-lg lg:text-xl font-bold text-gray-800">Health Dashboard</span>
+        <div className="flex items-center space-x-2">
+          <img src={logo} alt="VentureMond Logo" className="h-8 w-auto" />
+          <span className="text-lg lg:text-xl text-gray-800 flex items-center">
+            <span className="font-normal">Venture</span>
+            <span className="font-bold">Mond</span>
+          </span>
         </div>
       </div>
 
@@ -60,11 +62,10 @@ const NewSidebar = () => {
             <li key={index}>
               <button
                 onClick={() => navigateTo(item.name)}
-                className={`w-full flex items-center space-x-3 px-3 py-2.5 rounded-lg text-left transition-colors ${
-                  currentPage === item.name
+                className={`w-full flex items-center space-x-3 px-3 py-2.5 rounded-lg text-left transition-colors ${currentPage === item.name
                     ? 'bg-gray-100 text-gray-900'
                     : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'
-                }`}
+                  }`}
               >
                 <FontAwesomeIcon icon={item.icon} className="text-sm flex-shrink-0" />
                 <span className="text-sm font-medium truncate">{item.name}</span>
@@ -88,11 +89,10 @@ const NewSidebar = () => {
             <FontAwesomeIcon icon={faMessage} className="text-white text-lg" />
           </div>
           <div className="text-center">
-            <p className="text-sm font-medium mb-1">Make an Appointments</p>
-            <p className="text-xs opacity-90">Best Health Care here →</p>
+            <p className="text-sm font-medium mb-1">VentureMond Healthcare</p>
+            <p className="text-xs opacity-90">Management System</p>
           </div>
         </div>
-        <p className="text-xs text-gray-500 mt-3 text-center">Rhythm Admin Dashboard</p>
       </div>
     </div>
   );

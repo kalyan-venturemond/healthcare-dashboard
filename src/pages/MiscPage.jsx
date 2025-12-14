@@ -1,8 +1,8 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { 
-  faCog, 
-  faQuestionCircle, 
-  faFileAlt, 
+import {
+  faCog,
+  faQuestionCircle,
+  faFileAlt,
   faDownload,
   faBug,
   faLightbulb,
@@ -16,7 +16,7 @@ const MiscPage = () => {
   const helpTopics = [
     {
       title: 'Getting Started',
-      description: 'Learn the basics of using the Health Dashboard',
+      description: 'Learn the basics of using the VentureMond Healthcare Dashboard',
       icon: faLightbulb,
       color: 'bg-yellow-100 text-yellow-600',
       articles: 12
@@ -47,7 +47,7 @@ const MiscPage = () => {
   const downloads = [
     {
       name: 'User Manual',
-      description: 'Complete guide to using the Health Dashboard',
+      description: 'Complete guide to using the VentureMond Healthcare Dashboard',
       size: '2.5 MB',
       format: 'PDF'
     },
@@ -185,7 +185,7 @@ const MiscPage = () => {
               </div>
               <div>
                 <p className="text-sm font-medium text-gray-900">Email Support</p>
-                <p className="text-sm text-gray-500">support@healthdashboard.com</p>
+                <p className="text-sm text-gray-500">support@venturemond.com</p>
               </div>
             </div>
 
@@ -195,7 +195,7 @@ const MiscPage = () => {
               </div>
               <div>
                 <p className="text-sm font-medium text-gray-900">Phone Support</p>
-                <p className="text-sm text-gray-500">+1 (555) 123-4567</p>
+                <p className="text-sm text-gray-500">+91 90000 00000</p>
               </div>
             </div>
 
@@ -205,7 +205,7 @@ const MiscPage = () => {
               </div>
               <div>
                 <p className="text-sm font-medium text-gray-900">Office Address</p>
-                <p className="text-sm text-gray-500">123 Healthcare Ave, Medical City, MC 12345</p>
+                <p className="text-sm text-gray-500">VentureMond HQ, India</p>
               </div>
             </div>
           </div>
@@ -231,7 +231,7 @@ const MiscPage = () => {
               <span className="text-sm font-medium text-gray-900">Premium</span>
             </div>
           </div>
-          
+
           <div className="mt-6 pt-4 border-t border-gray-200">
             <button className="w-full bg-gray-100 text-gray-700 py-2 px-4 rounded-lg hover:bg-gray-200 text-sm">
               Check for Updates
@@ -244,7 +244,7 @@ const MiscPage = () => {
       <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl p-4 sm:p-6 lg:p-8 border border-blue-100">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">We Value Your Feedback</h2>
-          <p className="text-gray-600 text-sm sm:text-base mb-4 sm:mb-6">Help us improve the Health Dashboard by sharing your thoughts and suggestions</p>
+          <p className="text-gray-600 text-sm sm:text-base mb-4 sm:mb-6">Help us improve the VentureMond Healthcare Dashboard by sharing your thoughts and suggestions</p>
 
           <div className="bg-white rounded-lg p-4 sm:p-6 shadow-sm">
             <form className="space-y-4">
@@ -256,7 +256,7 @@ const MiscPage = () => {
                   className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                 />
               </div>
-              
+
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1 text-left">Message</label>
                 <textarea
@@ -265,7 +265,7 @@ const MiscPage = () => {
                   className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                 ></textarea>
               </div>
-              
+
               <button
                 type="submit"
                 className="w-full bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 font-medium"

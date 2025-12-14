@@ -6,20 +6,20 @@ import phone from "../../assets/PhoneIcon.svg"
 import insurance from "../../assets/InsuranceIcon.svg"
 
 const User = () => {
-    const { selectedPatient } = useContext(DataContext);
+  const { selectedPatient } = useContext(DataContext);
 
 
 
-    if (!selectedPatient) return <p>Patient not found</p>;
+  if (!selectedPatient) return <p>Patient not found</p>;
 
-    const formatDate = (dateString) => {
-      const date = new Date(dateString);
-      return new Intl.DateTimeFormat("en-US", {
-        month: "long",
-        day: "numeric",
-        year: "numeric",
-      }).format(date);
-    };
+  const formatDate = (dateString) => {
+    const date = new Date(dateString);
+    return new Intl.DateTimeFormat("en-US", {
+      month: "long",
+      day: "numeric",
+      year: "numeric",
+    }).format(date);
+  };
 
   return (
     <div className="bg-white md:px-2 px-4 py-8 rounded-2xl">
@@ -27,7 +27,7 @@ const User = () => {
         <div className="flex flex-col gap-8 items-center justify-center">
           <img
             src={selectedPatient.profile_picture}
-            alt="Jessica"
+            alt="User Avatar"
             className="object-cover w-[200px] md:w-[120px] sm:w-[100px] xs:w-[100px]"
           />
 
@@ -37,7 +37,7 @@ const User = () => {
         <div className="flex flex-col gap-8 text-[0.9rem]">
           <div className="flex gap-8 md:gap-4 items-center">
             <div className="md:w-[20%]">
-              <img src={calender} alt="calender" className=" "/>
+              <img src={calender} alt="calender" className=" " />
             </div>
             <div>
               <h3>Date of Birth</h3>
@@ -47,7 +47,7 @@ const User = () => {
 
           <div className="flex gap-8 md:gap-4 items-center">
             <div className="md:w-[20%]">
-              <img src={gender} alt="gender" className=" "/>
+              <img src={gender} alt="gender" className=" " />
             </div>
             <div>
               <h3>Gender</h3>
@@ -57,7 +57,7 @@ const User = () => {
 
           <div className="flex gap-8 md:gap-4 items-center">
             <div className="md:w-[20%]">
-              <img src={phone} alt="phone" className=" "/>
+              <img src={phone} alt="phone" className=" " />
             </div>
             <div>
               <h3>Contact Info</h3>
@@ -67,7 +67,7 @@ const User = () => {
 
           <div className="flex gap-8 md:gap-4 items-center">
             <div className="md:w-[20%]">
-              <img src={phone} alt="phone" className=" "/>
+              <img src={phone} alt="phone" className=" " />
             </div>
             <div>
               <h3>Emergency Contact</h3>
@@ -77,7 +77,7 @@ const User = () => {
 
           <div className="flex gap-8 md:gap-4 items-center">
             <div className="md:w-[20%]">
-              <img src={insurance} alt="insurance" className=" "/>
+              <img src={insurance} alt="insurance" className=" " />
             </div>
             <div>
               <h3>Insurance Provider</h3>

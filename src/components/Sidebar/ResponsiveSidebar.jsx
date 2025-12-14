@@ -1,3 +1,4 @@
+import logo from "../../assets/venturemond_logo.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faHome,
@@ -23,11 +24,12 @@ const MobileSidebarContent = ({ menuItems, currentPage, handleNavigation, setIsM
   <div className="flex flex-col h-full">
     {/* Mobile Header */}
     <div className="flex items-center justify-between p-4 border-b border-gray-100">
-      <div className="flex items-center space-x-3">
-        <div className="w-8 h-8 bg-red-500 rounded-lg flex items-center justify-center">
-          <FontAwesomeIcon icon={faHeartbeat} className="text-white text-lg" />
-        </div>
-        <span className="text-lg font-bold text-gray-800">Health Dashboard</span>
+      <div className="flex items-center space-x-2">
+        <img src={logo} alt="VentureMond Logo" className="h-8 w-auto" />
+        <span className="text-lg font-bold text-gray-800 flex items-center">
+          <span className="font-normal">Venture</span>
+          <span>Mond</span>
+        </span>
       </div>
       <button
         onClick={() => setIsMobileMenuOpen(false)}
@@ -57,11 +59,10 @@ const MobileSidebarContent = ({ menuItems, currentPage, handleNavigation, setIsM
           <li key={index}>
             <button
               onClick={() => handleNavigation(item.name)}
-              className={`w-full flex items-center space-x-3 px-4 py-3 rounded-lg text-left transition-colors ${
-                currentPage === item.name
+              className={`w-full flex items-center space-x-3 px-4 py-3 rounded-lg text-left transition-colors ${currentPage === item.name
                   ? 'bg-gray-100 text-gray-900'
                   : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'
-              }`}
+                }`}
             >
               <FontAwesomeIcon icon={item.icon} className="text-base flex-shrink-0" />
               <span className="text-base font-medium">{item.name}</span>
@@ -85,20 +86,19 @@ const MobileSidebarContent = ({ menuItems, currentPage, handleNavigation, setIsM
           <FontAwesomeIcon icon={faMessage} className="text-white text-lg" />
         </div>
         <div className="text-center">
-          <p className="text-sm font-medium mb-1">Make an Appointment</p>
-          <p className="text-xs opacity-90">Best Health Care here →</p>
+          <p className="text-sm font-medium mb-1">VentureMond Healthcare</p>
+          <p className="text-xs opacity-90">Management System</p>
         </div>
       </div>
-      <p className="text-xs text-gray-500 mt-3 text-center">Health Dashboard</p>
     </div>
   </div>
 );
 
 const ResponsiveSidebar = ({
   isMobileMenuOpen = false,
-  setIsMobileMenuOpen = () => {},
+  setIsMobileMenuOpen = () => { },
   sidebarCollapsed = false,
-  setSidebarCollapsed = () => {}
+  setSidebarCollapsed = () => { }
 }) => {
   const { currentPage, navigateTo } = useApp();
   const [isMobile, setIsMobile] = useState(false);
@@ -149,17 +149,16 @@ const ResponsiveSidebar = ({
       <>
         {/* Mobile Overlay */}
         {isMobileMenuOpen && (
-          <div 
+          <div
             className="fixed inset-0 bg-black bg-opacity-50 z-40 lg:hidden"
             onClick={() => setIsMobileMenuOpen(false)}
           />
         )}
-        
+
         {/* Mobile Sidebar */}
-        <div className={`fixed top-0 left-0 h-full w-80 bg-white shadow-xl z-50 transform transition-transform duration-300 ease-in-out lg:hidden ${
-          isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'
-        }`}>
-          <MobileSidebarContent 
+        <div className={`fixed top-0 left-0 h-full w-80 bg-white shadow-xl z-50 transform transition-transform duration-300 ease-in-out lg:hidden ${isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'
+          }`}>
+          <MobileSidebarContent
             menuItems={menuItems}
             currentPage={currentPage}
             handleNavigation={handleNavigation}
@@ -172,20 +171,19 @@ const ResponsiveSidebar = ({
 
   // Desktop sidebar
   return (
-    <div className={`hidden lg:flex flex-col bg-white shadow-lg h-screen fixed top-0 left-0 z-30 transition-all duration-300 ${
-      sidebarCollapsed ? 'w-20' : 'w-64'
-    }`}>
-      {/* Logo Section */}
-      <div className={`border-b border-gray-100 transition-all duration-300 ${
-        sidebarCollapsed ? 'p-4' : 'p-4 lg:p-6'
+    <div className={`hidden lg:flex flex-col bg-white shadow-lg h-screen fixed top-0 left-0 z-30 transition-all duration-300 ${sidebarCollapsed ? 'w-20' : 'w-64'
       }`}>
-        <div className="flex items-center space-x-3">
-          <div className="w-8 h-8 bg-red-500 rounded-lg flex items-center justify-center flex-shrink-0">
-            <FontAwesomeIcon icon={faHeartbeat} className="text-white text-lg" />
+      {/* Logo Section */}
+      <div className={`border-b border-gray-100 transition-all duration-300 ${sidebarCollapsed ? 'p-4' : 'p-4 lg:p-6'
+        }`}>
+        <div className="flex items-center space-x-2">
+          <div className="flex-shrink-0">
+            <img src={logo} alt="VentureMond Logo" className="h-8 w-auto" />
           </div>
           {!sidebarCollapsed && (
-            <span className="text-lg lg:text-xl font-bold text-gray-800 truncate">
-              Health Dashboard
+            <span className="text-lg lg:text-xl text-gray-800 truncate flex items-center">
+              <span className="font-normal">Venture</span>
+              <span className="font-bold">Mond</span>
             </span>
           )}
         </div>
@@ -226,13 +224,11 @@ const ResponsiveSidebar = ({
             <li key={index}>
               <button
                 onClick={() => handleNavigation(item.name)}
-                className={`w-full flex items-center rounded-lg text-left transition-colors group ${
-                  sidebarCollapsed ? 'px-3 py-3 justify-center' : 'px-3 py-2.5 space-x-3'
-                } ${
-                  currentPage === item.name
+                className={`w-full flex items-center rounded-lg text-left transition-colors group ${sidebarCollapsed ? 'px-3 py-3 justify-center' : 'px-3 py-2.5 space-x-3'
+                  } ${currentPage === item.name
                     ? 'bg-gray-100 text-gray-900'
                     : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'
-                }`}
+                  }`}
                 title={sidebarCollapsed ? item.name : ''}
               >
                 <FontAwesomeIcon
@@ -263,11 +259,10 @@ const ResponsiveSidebar = ({
               <FontAwesomeIcon icon={faMessage} className="text-white text-lg" />
             </div>
             <div className="text-center">
-              <p className="text-sm font-medium mb-1">Make an Appointment</p>
-              <p className="text-xs opacity-90">Best Health Care here →</p>
+              <p className="text-sm font-medium mb-1">VentureMond Healthcare</p>
+              <p className="text-xs opacity-90">Management System</p>
             </div>
           </div>
-          <p className="text-xs text-gray-500 mt-3 text-center">Health Dashboard</p>
         </div>
       )}
     </div>

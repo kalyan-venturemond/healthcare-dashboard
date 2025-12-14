@@ -1,8 +1,8 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { 
-  faChartLine, 
-  faUserMd, 
-  faCalendarAlt, 
+import {
+  faChartLine,
+  faUserMd,
+  faCalendarAlt,
   faFileAlt,
   faBell,
   faShieldAlt,
@@ -121,7 +121,7 @@ const FeaturesPage = () => {
       <div className="text-center px-4">
         <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">Platform Features</h1>
         <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto">
-          Discover the comprehensive features that make our Health Dashboard the most advanced
+          Discover the comprehensive features that make our VentureMond Healthcare Dashboard the most advanced
           healthcare management platform available today.
         </p>
       </div>
@@ -135,7 +135,7 @@ const FeaturesPage = () => {
           <h3 className="text-2xl font-bold text-gray-900">50+</h3>
           <p className="text-gray-600 text-sm">Total Features</p>
         </div>
-        
+
         <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 text-center">
           <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mx-auto mb-3">
             <FontAwesomeIcon icon={faShieldAlt} className="text-green-600 text-xl" />
@@ -143,7 +143,7 @@ const FeaturesPage = () => {
           <h3 className="text-2xl font-bold text-gray-900">100%</h3>
           <p className="text-gray-600 text-sm">HIPAA Compliant</p>
         </div>
-        
+
         <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 text-center">
           <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mx-auto mb-3">
             <FontAwesomeIcon icon={faCloud} className="text-purple-600 text-xl" />
@@ -151,7 +151,7 @@ const FeaturesPage = () => {
           <h3 className="text-2xl font-bold text-gray-900">99.9%</h3>
           <p className="text-gray-600 text-sm">Uptime</p>
         </div>
-        
+
         <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 text-center">
           <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mx-auto mb-3">
             <FontAwesomeIcon icon={faUsers} className="text-orange-600 text-xl" />
@@ -195,7 +195,7 @@ const FeaturesPage = () => {
             <h3 className="text-lg font-semibold text-gray-900 mb-2">Clinical Management</h3>
             <p className="text-gray-600 text-sm">Patient records, diagnosis tracking, treatment plans</p>
           </div>
-          
+
           <div className="text-center">
             <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
               <FontAwesomeIcon icon={faCalendarAlt} className="text-green-600 text-2xl" />
@@ -203,7 +203,7 @@ const FeaturesPage = () => {
             <h3 className="text-lg font-semibold text-gray-900 mb-2">Scheduling</h3>
             <p className="text-gray-600 text-sm">Appointment booking, resource management, calendar sync</p>
           </div>
-          
+
           <div className="text-center">
             <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
               <FontAwesomeIcon icon={faChartLine} className="text-purple-600 text-2xl" />
@@ -211,7 +211,7 @@ const FeaturesPage = () => {
             <h3 className="text-lg font-semibold text-gray-900 mb-2">Analytics</h3>
             <p className="text-gray-600 text-sm">Performance metrics, reporting, data visualization</p>
           </div>
-          
+
           <div className="text-center">
             <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
               <FontAwesomeIcon icon={faShieldAlt} className="text-orange-600 text-2xl" />
@@ -238,12 +238,12 @@ const FeaturesPage = () => {
             <p className="text-gray-600 text-sm">Native iOS and Android applications for on-the-go access</p>
             <div className="mt-4">
               <div className="bg-gray-200 rounded-full h-2">
-                <div className="bg-blue-600 h-2 rounded-full" style={{width: '75%'}}></div>
+                <div className="bg-blue-600 h-2 rounded-full" style={{ width: '75%' }}></div>
               </div>
               <p className="text-xs text-gray-500 mt-1">75% Complete</p>
             </div>
           </div>
-          
+
           <div className="bg-white rounded-lg p-6 shadow-sm">
             <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
               <FontAwesomeIcon icon={faRobot} className="text-green-600 text-xl" />
@@ -252,12 +252,12 @@ const FeaturesPage = () => {
             <p className="text-gray-600 text-sm">Machine learning powered diagnostic assistance</p>
             <div className="mt-4">
               <div className="bg-gray-200 rounded-full h-2">
-                <div className="bg-green-600 h-2 rounded-full" style={{width: '60%'}}></div>
+                <div className="bg-green-600 h-2 rounded-full" style={{ width: '60%' }}></div>
               </div>
               <p className="text-xs text-gray-500 mt-1">60% Complete</p>
             </div>
           </div>
-          
+
           <div className="bg-white rounded-lg p-6 shadow-sm">
             <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
               <FontAwesomeIcon icon={faHeartbeat} className="text-purple-600 text-xl" />
@@ -266,7 +266,7 @@ const FeaturesPage = () => {
             <p className="text-gray-600 text-sm">Connect with medical devices and wearables</p>
             <div className="mt-4">
               <div className="bg-gray-200 rounded-full h-2">
-                <div className="bg-purple-600 h-2 rounded-full" style={{width: '40%'}}></div>
+                <div className="bg-purple-600 h-2 rounded-full" style={{ width: '40%' }}></div>
               </div>
               <p className="text-xs text-gray-500 mt-1">40% Complete</p>
             </div>

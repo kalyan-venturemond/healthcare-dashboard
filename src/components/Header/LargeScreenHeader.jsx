@@ -1,11 +1,11 @@
 
-import logo from "../../assets/TestLogo.svg";
+import logo from "../../assets/venturemond_logo.png";
 import home from "../../assets/home.svg";
 import user from "../../assets/user.svg";
 import calender from "../../assets/calender.svg";
 import message from "../../assets/message.svg";
 import creditcard from "../../assets/creditcard.svg";
-import doc from "../../assets/doc.png";
+import doc from "../../assets/avatar_placeholder.svg";
 import settings from "../../assets/settings.svg";
 import more from "../../assets/more.svg";
 
@@ -13,8 +13,12 @@ const LargeScreenHeader = () => {
   return (
     <div className="flex items-center px-[2rem] md:px-[1rem] bg-[#fff] rounded-[2rem] py-1">
       <div className="flex justify-between items-center w-full md:text-sm">
-        <div className="md:basis-[15%]">
-          <img src={logo} alt="logo" />
+        <div className="md:basis-[20%] flex items-center gap-2">
+          <img src={logo} alt="VentureMond Logo" className="h-10 w-auto" />
+          <span className="text-lg md:text-xl text-[#072635] flex items-center">
+            <span className="font-normal">Venture</span>
+            <span className="font-bold">Mond</span>
+          </span>
         </div>
 
         <nav className="basis-[50%] md:basis-[55%]">
@@ -63,8 +67,8 @@ const LargeScreenHeader = () => {
             </div>
 
             <div>
-              <h3 className="font-bold">Nafis Rayan</h3>
-              <p>Health Dashboard Developer</p>
+              <h3 className="font-bold">VentureMond Client</h3>
+              <p>Healthcare Admin</p>
             </div>
           </div>
 
