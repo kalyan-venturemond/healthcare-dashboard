@@ -61,15 +61,9 @@ const NewHeader = ({ isMobileMenuOpen = false, setIsMobileMenuOpen = () => { } }
 
         {/* Right side - Icons and User */}
         <div className="flex items-center space-x-2 sm:space-x-4">
-          {/* Search Icon for mobile */}
-          <button className="sm:hidden p-2 hover:bg-gray-100 rounded-lg">
-            <FontAwesomeIcon icon={faSearch} className="text-gray-600 text-lg" />
-          </button>
 
-          {/* Expand Icon - Hidden on mobile */}
-          <button className="hidden md:block p-2 hover:bg-gray-100 rounded-lg">
-            <FontAwesomeIcon icon={faExpand} className="text-gray-600 text-lg" />
-          </button>
+
+
 
           {/* Notification Bell */}
           <div className="relative">
